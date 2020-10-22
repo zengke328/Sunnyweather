@@ -32,6 +32,7 @@ object Versions {
     val hitViewModule = "1.0.0-alpha01"
     val appStartup = "1.0.0-alpha01"
     val DataStore = "1.0.0-alpha01"
+    val mmkv = "1.2.4"
 }
 
 object AndroidX {
@@ -114,4 +115,8 @@ object Depend {
     val espressoCore = "androidx.test.espresso:espresso-core:${Versions.espressoCore}"
     val jDatabinding = "com.hi-dhl:jdatabinding:${Versions.jDatabinding}"
     val timber = "com.jakewharton.timber:timber:${Versions.timber}"
+}
+
+object Mmkv{
+    val mmkv = "com.tencent:mmkv-static:${Versions.mmkv}"
 }

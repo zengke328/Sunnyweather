@@ -1,7 +1,10 @@
 import com.zk.plugin.AndroidX
+import com.zk.plugin.Anko
 import com.zk.plugin.BuildConfig
 import com.zk.plugin.Depend
 import com.zk.plugin.Kt
+import com.zk.plugin.Mmkv
+import com.zk.plugin.Retrofit
 
 plugins{
     // 这个 id 就是在 versionPlugin 文件夹下 build.gradle 文件内定义的 id
@@ -36,10 +39,15 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation Kt.stdlibJdk8
-    implementation AndroidX.appcompat
-    implementation AndroidX.coreKtx
-    implementation AndroidX.constraintlayout
+    api Kt.stdlibJdk8
+    api AndroidX.appcompat
+    api AndroidX.coreKtx
+    api AndroidX.constraintlayout
+    api Anko.common
+    api Retrofit.runtime
+    api Retrofit.gson
+    api Retrofit.logging
+    api Mmkv.mmkv
 
     testImplementation Depend.junit
     androidTestImplementation Depend.androidTestJunit

@@ -1,3 +1,3 @@
-include ':app', ':common'
+include ':app', ':commonlib'
 rootProject.name='Sunnyweather'
 includeBuild 'versionplugin'

@@ -1,7 +1,5 @@
-import com.zk.plugin.AndroidX
 import com.zk.plugin.BuildConfig
 import com.zk.plugin.Depend
-import com.zk.plugin.Kt
 
 plugins {
     // 这个 id 就是在 versionPlugin 文件夹下 build.gradle 文件内定义的 id
@@ -39,10 +37,8 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation Kt.stdlibJdk8
-    implementation AndroidX.appcompat
-    implementation AndroidX.coreKtx
-    implementation AndroidX.constraintlayout
+    implementation project(':commonlib')
+
 
     testImplementation Depend.junit
     androidTestImplementation Depend.androidTestJunit
