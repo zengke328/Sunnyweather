@@ -3,6 +3,8 @@
 buildscript {
     ext.kotlin_version = '1.3.50'
     repositories {
+        //加入下面这句
+        maven{ url 'http://maven.aliyun.com/nexus/content/groups/public/'}
         google()
         jcenter()
 
@@ -17,6 +19,8 @@ buildscript {
 
 allprojects {
     repositories {
+        //加入下面这句
+        maven{ url 'http://maven.aliyun.com/nexus/content/groups/public/'}
         google()
         jcenter()
 
