@@ -48,6 +48,12 @@ dependencies {
     api Retrofit.gson
     api Retrofit.logging
     api Mmkv.mmkv
+    api AndroidX.lifeliveData
+    api AndroidX.lifeViewModel
+    api AndroidX.lifeExt
+    api AndroidX.recyclerview
+    api 'com.google.android.material:material:1.2.1'
+
 
     testImplementation Depend.junit
     androidTestImplementation Depend.androidTestJunit

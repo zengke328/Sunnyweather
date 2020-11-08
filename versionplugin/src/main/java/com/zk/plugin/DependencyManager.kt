@@ -33,23 +33,27 @@ object Versions {
     val appStartup = "1.0.0-alpha01"
     val DataStore = "1.0.0-alpha01"
     val mmkv = "1.2.4"
+    val lifeliveData = "2.2.0-alpha05"
+    val lifeViewModel = "2.1.0"
+    val lifeExt = "2.1.0"
 }
 
 object AndroidX {
     val appcompat = "androidx.appcompat:appcompat:${Versions.appcompat}"
     val coreKtx = "androidx.core:core-ktx:${Versions.coreKtx}"
-    val constraintlayout =
-        "androidx.constraintlayout:constraintlayout:${Versions.constraintlayout}"
+    val constraintlayout = "androidx.constraintlayout:constraintlayout:${Versions.constraintlayout}"
     val pagingRuntime = "androidx.paging:paging-runtime:${Versions.paging}"
 
     val workRuntime = "androidx.work:work-runtime:${Versions.work}"
     val workTesting = "androidx.work:work-testing:${Versions.work}"
     val cardview = "androidx.cardview:cardview:${Versions.cardview}"
     val recyclerview = "androidx.recyclerview:recyclerview:${Versions.recyclerview}"
-    val swiperefreshlayout =
-        "androidx.swiperefreshlayout:swiperefreshlayout:${Versions.swiperefreshlayout}"
+    val swiperefreshlayout = "androidx.swiperefreshlayout:swiperefreshlayout:${Versions.swiperefreshlayout}"
 
     val appStartup = "androidx.startup:startup-runtime:${Versions.appStartup}"
+    val lifeliveData ="androidx.lifecycle:lifecycle-livedata-ktx:${Versions.lifeliveData}"
+    val lifeViewModel ="androidx.lifecycle:lifecycle-viewmodel-ktx:${Versions.lifeViewModel}"
+    val lifeExt ="androidx.lifecycle:lifecycle-extensions:${Versions.lifeExt}"
 }
 
 object Hilt {
