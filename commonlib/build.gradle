@@ -1,10 +1,4 @@
-import com.zk.plugin.AndroidX
-import com.zk.plugin.Anko
-import com.zk.plugin.BuildConfig
-import com.zk.plugin.Depend
-import com.zk.plugin.Kt
-import com.zk.plugin.Mmkv
-import com.zk.plugin.Retrofit
+import com.zk.plugin.*
 
 plugins{
     // 这个 id 就是在 versionPlugin 文件夹下 build.gradle 文件内定义的 id
