@@ -8,7 +8,8 @@ data class RealtimeResponse(val status: String, val result: Result) {
 
     data class Realtime(
         val skycon: String,
-        val temperature: Float, @SerializedName("air_quality") val airQuality: AirQuality
+        val temperature: Float,
+        @SerializedName("air_quality") val airQuality: AirQuality
     )
 
     data class AirQuality(val aqi: AQI)

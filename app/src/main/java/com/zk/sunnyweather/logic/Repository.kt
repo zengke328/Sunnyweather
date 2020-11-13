@@ -1,5 +1,6 @@
 package com.zk.sunnyweather.logic
 
+import android.util.Log
 import androidx.lifecycle.liveData
 import com.sunnyweather.android.logic.model.Weather
 import com.zk.sunnyweather.logic.model.Place
@@ -41,6 +42,7 @@ object Repository {
                 val realtimeResponse =  deferredRealtime.await()
 
                 if (realtimeResponse.status == "ok" && dailyResponse.status == "ok") {
+                    Log.d("http refreshWeather realtimeResponse ",realtimeResponse.result.toString())
                     val weather =
                         Weather(realtimeResponse.result.realTime, dailyResponse.result.daily)
                     Result.success(weather)
@@ -54,5 +56,6 @@ object Repository {
         }
         emit(result)
     }
+
 
 }

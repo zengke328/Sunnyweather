@@ -48,7 +48,7 @@ dependencies {
     api AndroidX.recyclerview
     api 'com.google.android.material:material:1.2.1'
     api "androidx.swiperefreshlayout:swiperefreshlayout:1.1.0"
-
+    api 'com.squareup.okhttp3:logging-interceptor:3.14.9'
 
     testImplementation Depend.junit
     androidTestImplementation Depend.androidTestJunit

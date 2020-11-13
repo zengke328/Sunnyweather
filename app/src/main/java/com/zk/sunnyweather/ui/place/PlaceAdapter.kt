@@ -35,7 +35,7 @@ class PlaceAdapter(val fragment: PlaceFragment, val placeList: List<Place>) : Re
                     putExtra("place_name", place.name)
                 }
                 fragment.activity?.startActivity(intent)
-                fragment.activity?.finish()
+//                fragment.activity?.finish()
             }
 
         }
