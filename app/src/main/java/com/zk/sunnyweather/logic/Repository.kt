@@ -44,7 +44,7 @@ object Repository {
                 if (realtimeResponse.status == "ok" && dailyResponse.status == "ok") {
                     Log.d("http refreshWeather realtimeResponse ",realtimeResponse.result.toString())
                     val weather =
-                        Weather(realtimeResponse.result.realTime, dailyResponse.result.daily)
+                        Weather(realtimeResponse.result.realtime, dailyResponse.result.daily)
                     Result.success(weather)
                 } else {
                     Result.failure(RuntimeException("realtime response status is ${realtimeResponse.status}" +

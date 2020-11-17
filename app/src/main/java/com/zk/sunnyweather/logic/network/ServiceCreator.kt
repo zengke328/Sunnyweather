@@ -8,12 +8,8 @@ import java.util.concurrent.TimeUnit
 
 object ServiceCreator {
 
-    private val interceptor = run {
-        val httpLoggingInterceptor = HttpLoggingInterceptor()
-        httpLoggingInterceptor.apply {
-            httpLoggingInterceptor.level = HttpLoggingInterceptor.Level.BODY
-        }
-    }
+
+    val interceptor = HttpLoggingInterceptor().apply { level = HttpLoggingInterceptor.Level.BASIC }
 
     val okHttpClient = OkHttpClient.Builder()
         .addInterceptor(interceptor)
